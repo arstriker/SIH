@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishi Aashaan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Krishi Aashaan</h1>
+        <p>Your AI Farming Assistant</p>
+    </header>
+
+    <main>
+        <!-- Section 1: Personalized Advice (Dashboard) -->
+        <section id="dashboard">
+            <h2>Today's Advice</h2>
+            <div id="advice-container" class="card">
+                <p>Click the button to get your daily advice.</p>
+                <button id="get-advice-button">Get Advice</button>
+            </div>
+        </section>
+
+        <!-- Section 2: Visual Diagnosis (Nottam) -->
+        <section id="nottam">
+            <h2>Visual Diagnosis (Nottam)</h2>
+            <div class="card">
+                <p>Notice a problem? Upload a picture to get a diagnosis.</p>
+                <input type="file" id="image-input" accept="image/*">
+                <img id="image-preview" src="" alt="Image preview" class="hidden" style="max-width: 100%; height: auto; margin-top: 10px;">
+                <button id="diagnose-button">Get Diagnosis</button>
+                <div id="diagnosis-result" class="result-box"></div>
+            </div>
+        </section>
+
+        <!-- Section 3: Farm Diary (Aashaan) -->
+        <section id="aashaan">
+            <h2>Farm Diary (Aashaan)</h2>
+            <div class="card">
+                <p>Log your daily activities in Malayalam or English.</p>
+                <textarea id="diary-input" rows="3" placeholder="e.g., ഇന്ന് 500 രൂപക്ക് 10 കിലോ പൊട്ടാഷ് വാങ്ങി"></textarea>
+                <button id="log-diary-button">Save to Diary</button>
+                <div id="diary-confirmation" class="result-box"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Krishi Aashaan</p>
+    </footer>
+
+</body>
+</html>
